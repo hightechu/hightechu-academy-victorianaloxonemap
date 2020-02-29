@@ -1,6 +1,7 @@
 // createAccount
 function createKit() {
   if(document.getElementById('latitude').value == "" || document.getElementById('longitude').value == "" || document.getElementById('name').value == "") return;
+
     // If the response has an error -> inform user
     // Else is successful -> inform user
     responseStatus = function (response, status) {

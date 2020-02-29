@@ -5,7 +5,7 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "kit": 4
+    "kit": 15
   },
   "models": {
     "User": {
@@ -18,9 +18,10 @@
     "RoleMapping": {},
     "Role": {},
     "kit": {
-      "1": "{\"latitude\":1,\"longitude\":1,\"name\":\"1\",\"id\":1}",
-      "2": "{\"latitude\":48.43,\"longitude\":-123.603,\"name\":\"test value\",\"id\":2}",
-      "3": "{\"latitude\":48.43,\"longitude\":-123.603,\"name\":\"test value!\",\"id\":3}"
+      "11": "{\"latitude\":48.4284,\"longitude\":-123.3656,\"name\":\"Victoria\",\"id\":11}",
+      "12": "{\"latitude\":48.4384,\"longitude\":-123.3656,\"name\":\"second point\",\"id\":12}",
+      "13": "{\"latitude\":48.460046,\"longitude\":-123.313591,\"name\":\"close\",\"id\":13}",
+      "14": "{\"latitude\":47675675,\"longitude\":756476574,\"name\":\"far\",\"id\":14}"
     }
   }
 }
