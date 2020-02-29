@@ -1,1 +1,70 @@
 /* Add Styles Here */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p.groove {
+  border-style: groove;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.collapsible {
+  background-color: rgb(201, 198, 198);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out
+}
+
+.collapsible:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+button {
+  font-size: 24px;
+}
