@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ADD TITLE -->
+    <title></title>
+    <!-- ADD DESCRIPTION -->
+    <meta name="description" content="">
+    <!-- ADD AUTHOR -->
+    <meta name="author" content="">
+    <!-- ADD CSS FILES HERE -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="utf-8" />
+    <title>Leaflet Routing Machine Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <style>
+      .map {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <!-- ADD FAVICON -->
+    <!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- ADD CONTENT HERE -->
+
+    <section>
+      <div>
+        <a href = "link.html;" class="button">something 1</a>
+        <a href = "link.html;" class="button">something 2</a>
+      </div>
+    </section>
+
+    <div id="map" class="map"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+    <script src="js/leaflet-routing-machine.js"></script>
+
+    <br>
+
+    <div class="outerdiv" width="100%">
+      <div class="innerdiv" id="mapid"></div>
+    </div>
+
+    <!-- JAVASCRIPT SCRIPT -->
+    <!-- ADD JS FILES HERE -->
+    <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
