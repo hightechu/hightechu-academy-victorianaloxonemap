@@ -11,7 +11,7 @@ function createAccount() {
       // Account Created Successfully
       console.log("Account created successfully!");
       // Redirect User to Homepage
-      window.location = "/registerlocaation.html";
+      window.location = "/login-for-settings.html";
     }
   }
 
@@ -42,7 +42,7 @@ function login() {
       setCookie("userId", response.userId)
 
       // Redirect User to Homepage
-      window.location = "/add-kit.html";
+      window.location = "/change-edit-locations.html";
     }
   }
 
