@@ -4,7 +4,8 @@
     "AccessToken": 2,
     "ACL": 1,
     "RoleMapping": 1,
-    "Role": 1
+    "Role": 1,
+    "kit": 4
   },
   "models": {
     "User": {
@@ -15,6 +16,11 @@
     },
     "ACL": {},
     "RoleMapping": {},
-    "Role": {}
+    "Role": {},
+    "kit": {
+      "1": "{\"latitude\":1,\"longitude\":1,\"name\":\"1\",\"id\":1}",
+      "2": "{\"latitude\":48.43,\"longitude\":-123.603,\"name\":\"test value\",\"id\":2}",
+      "3": "{\"latitude\":48.43,\"longitude\":-123.603,\"name\":\"test value!\",\"id\":3}"
+    }
   }
 }
