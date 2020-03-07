@@ -14,7 +14,7 @@ function createKit() {
         console.log("Kit created successfully!");
         alert("Thank you for registering you Naloxone Kit!")
         // Redirect User to Homepage
-        window.location = "/";
+        window.location = "/map.html";
       }
     }
   
@@ -25,5 +25,5 @@ function createKit() {
     jsonObj.name = document.getElementById("name").value;
   
     // Connect to the API
-    connectAPI("kits", "POST", responseStatus, jsonObj);
+    connectAPI("kits", "PUT", responseStatus, jsonObj);
   }
