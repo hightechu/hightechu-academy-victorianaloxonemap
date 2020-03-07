@@ -17,6 +17,11 @@
     },
     "title": {
       "type": "string"
+    },
+    "approved": {
+      "type": "boolean",
+      "required": true, 
+      "default": false
     }
   },
   "validations": [],

@@ -1,18 +1,21 @@
 {
   "ids": {
-    "User": 2,
-    "AccessToken": 2,
+    "User": 3,
+    "AccessToken": 4,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "kit": 15
+    "kit": 17
   },
   "models": {
     "User": {
-      "1": "{\"password\":\"$2a$10$d9bXH0ov.PVQ.sbh8uPxmuzJI2Jlwm/f61Mn8Q7t4uqXxEItlc/G2\",\"email\":\"test@test.test\",\"id\":1}"
+      "1": "{\"password\":\"$2a$10$d9bXH0ov.PVQ.sbh8uPxmuzJI2Jlwm/f61Mn8Q7t4uqXxEItlc/G2\",\"email\":\"test@test.test\",\"id\":1}",
+      "2": "{\"password\":\"$2a$10$qRqgz639bAoVgwV0oYJwlekapi8nEItgx3Trv2Q7JawWpoHOVlRm.\",\"email\":\"zhaozacharyjohnny@gmail.com\",\"id\":2}"
     },
     "AccessToken": {
-      "KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ": "{\"id\":\"KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ\",\"ttl\":1209600,\"created\":\"2020-02-08T20:51:25.591Z\",\"userId\":1}"
+      "KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ": "{\"id\":\"KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ\",\"ttl\":1209600,\"created\":\"2020-02-08T20:51:25.591Z\",\"userId\":1}",
+      "rLZieKaBZ7uZJGY30klu2Wy7CnM9a0VzM4frohDidUUVyMkgLRoz0KD7WkWu6rZY": "{\"id\":\"rLZieKaBZ7uZJGY30klu2Wy7CnM9a0VzM4frohDidUUVyMkgLRoz0KD7WkWu6rZY\",\"ttl\":1209600,\"created\":\"2020-03-07T18:37:21.351Z\",\"userId\":2}",
+      "tVkx2wWPfHatYkC5MTgav3bjUGmUG52m3zBW1qDF31VrOeFj7waAgijYr09lqF2I": "{\"id\":\"tVkx2wWPfHatYkC5MTgav3bjUGmUG52m3zBW1qDF31VrOeFj7waAgijYr09lqF2I\",\"ttl\":1209600,\"created\":\"2020-03-07T18:47:32.978Z\",\"userId\":2}"
     },
     "ACL": {},
     "RoleMapping": {},
@@ -21,7 +24,9 @@
       "11": "{\"latitude\":48.4284,\"longitude\":-123.3656,\"name\":\"Victoria\",\"id\":11}",
       "12": "{\"latitude\":48.4384,\"longitude\":-123.3656,\"name\":\"second point\",\"id\":12}",
       "13": "{\"latitude\":48.460046,\"longitude\":-123.313591,\"name\":\"close\",\"id\":13}",
-      "14": "{\"latitude\":47675675,\"longitude\":756476574,\"name\":\"far\",\"id\":14}"
+      "14": "{\"latitude\":47675675,\"longitude\":756476574,\"name\":\"far\",\"id\":14}",
+      "15": "{\"latitude\":48.461248,\"longitude\":-123.311934,\"name\":\"uvic\",\"id\":15}",
+      "16": "{\"latitude\":48.46125,\"longitude\":-123.311944,\"approved\":false,\"name\":\"uvic\",\"id\":16}"
     }
   }
 }
