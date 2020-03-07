@@ -11,7 +11,7 @@ function createAccount() {
       // Account Created Successfully
       console.log("Account created successfully!");
       // Redirect User to Homepage
-      window.location = "/registerlocaation.html";
+      window.location = "/registerlocation.html";
     }
   }
 
