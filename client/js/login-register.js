@@ -1,3 +1,15 @@
+
+function detectlogin() {
+  if (getCookie("userAuth")) {
+    // User already logged in
+   console.log("You are logged in");
+  } else {
+    window.location.href = "registerlocation.html";
+  };
+
+}
+
+
 // createAccount
 function createAccount() {
   // If the response has an error -> inform user
@@ -53,12 +65,4 @@ function login() {
 
   // Connect to the API
   connectAPI("users/login", "POST", responseStatus, jsonObj);
-}
-
-// Check if user is already logged in
-if (getCookie("userAuth")) {
-  // User already logged in
- console.log("You are already logged in.");
-  // Redirect User to Homepage
-  window.location = "/add-kit.html";
 }

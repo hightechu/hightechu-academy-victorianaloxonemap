@@ -1,3 +1,6 @@
+
+
+
 // createAccount
 function createKit() {
   if(document.getElementById('latitude').value == "" || document.getElementById('longitude').value == "" || document.getElementById('name').value == "") return;
