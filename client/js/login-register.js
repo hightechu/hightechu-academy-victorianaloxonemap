@@ -66,3 +66,11 @@ function login() {
   // Connect to the API
   connectAPI("users/login", "POST", responseStatus, jsonObj);
 }
+
+// Check if user is already logged in
+if (getCookie("userAuth")) {
+  // User already logged in
+ console.log("You are already logged in.");
+  // Redirect User to Homepage
+  window.location = "/add-kit.html";
+}
