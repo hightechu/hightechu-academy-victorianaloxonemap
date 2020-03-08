@@ -1,7 +1,7 @@
 {
   "ids": {
-    "User": 3,
-    "AccessToken": 6,
+    "User": 4,
+    "AccessToken": 7,
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
@@ -10,14 +10,16 @@
   "models": {
     "User": {
       "1": "{\"password\":\"$2a$10$d9bXH0ov.PVQ.sbh8uPxmuzJI2Jlwm/f61Mn8Q7t4uqXxEItlc/G2\",\"email\":\"test@test.test\",\"id\":1}",
-      "2": "{\"password\":\"$2a$10$qRqgz639bAoVgwV0oYJwlekapi8nEItgx3Trv2Q7JawWpoHOVlRm.\",\"email\":\"zhaozacharyjohnny@gmail.com\",\"id\":2}"
+      "2": "{\"password\":\"$2a$10$qRqgz639bAoVgwV0oYJwlekapi8nEItgx3Trv2Q7JawWpoHOVlRm.\",\"email\":\"zhaozacharyjohnny@gmail.com\",\"id\":2}",
+      "3": "{\"password\":\"$2a$10$ygbBxQdL1sY4/4jmKA4z3.2f3YogfCqA3kv.5TnsELDliT33m8/Gi\",\"email\":\"test@test.com\",\"id\":3}"
     },
     "AccessToken": {
       "KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ": "{\"id\":\"KtRP2aopwSVLTF5qKjRLwB39CAhna3dOAbC08nnYsj7AReWhKjqzTGcZTO8elgmZ\",\"ttl\":1209600,\"created\":\"2020-02-08T20:51:25.591Z\",\"userId\":1}",
       "rLZieKaBZ7uZJGY30klu2Wy7CnM9a0VzM4frohDidUUVyMkgLRoz0KD7WkWu6rZY": "{\"id\":\"rLZieKaBZ7uZJGY30klu2Wy7CnM9a0VzM4frohDidUUVyMkgLRoz0KD7WkWu6rZY\",\"ttl\":1209600,\"created\":\"2020-03-07T18:37:21.351Z\",\"userId\":2}",
       "tVkx2wWPfHatYkC5MTgav3bjUGmUG52m3zBW1qDF31VrOeFj7waAgijYr09lqF2I": "{\"id\":\"tVkx2wWPfHatYkC5MTgav3bjUGmUG52m3zBW1qDF31VrOeFj7waAgijYr09lqF2I\",\"ttl\":1209600,\"created\":\"2020-03-07T18:47:32.978Z\",\"userId\":2}",
       "GbZ8UDJYEG735iFS9jtPUhtbE0I8czQ4y50vtlZ16pdKwWAUHZOEZlLvTyPbKyRv": "{\"id\":\"GbZ8UDJYEG735iFS9jtPUhtbE0I8czQ4y50vtlZ16pdKwWAUHZOEZlLvTyPbKyRv\",\"ttl\":1209600,\"created\":\"2020-03-07T19:43:11.076Z\",\"userId\":2}",
-      "U9gA0Pnxfa4cUXb3yQJpZnpt5Uui4HqvzRj2ZES06imkCCCsQ6mvMNzC9DXMCM0Z": "{\"id\":\"U9gA0Pnxfa4cUXb3yQJpZnpt5Uui4HqvzRj2ZES06imkCCCsQ6mvMNzC9DXMCM0Z\",\"ttl\":1209600,\"created\":\"2020-03-07T19:49:36.545Z\",\"userId\":2}"
+      "U9gA0Pnxfa4cUXb3yQJpZnpt5Uui4HqvzRj2ZES06imkCCCsQ6mvMNzC9DXMCM0Z": "{\"id\":\"U9gA0Pnxfa4cUXb3yQJpZnpt5Uui4HqvzRj2ZES06imkCCCsQ6mvMNzC9DXMCM0Z\",\"ttl\":1209600,\"created\":\"2020-03-07T19:49:36.545Z\",\"userId\":2}",
+      "yjEpPm4e25EiMhI2uFfA3cvTms5z4mwEFUmy66ofUgBzU0lWEDZ25EAQop0vk0lt": "{\"id\":\"yjEpPm4e25EiMhI2uFfA3cvTms5z4mwEFUmy66ofUgBzU0lWEDZ25EAQop0vk0lt\",\"ttl\":1209600,\"created\":\"2020-03-07T21:40:30.091Z\",\"userId\":3}"
     },
     "ACL": {},
     "RoleMapping": {},
