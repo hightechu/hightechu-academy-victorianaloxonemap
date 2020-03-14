@@ -2,41 +2,68 @@
 
 HighTechU Group Project
 
-## [REPLACE ME WITH YOUR GROUP PROJECT NAME]
+## VICTORIA NALOXONE KIT MAP
 
 ### Website :star:
 
-[DELETE ME - ADD YOUR LIVE DEMO URL HERE]
+[Live Demo](https://victoria-naloxone-map.herokuapp.com)
 
-[Live Demo]()
+### Mini Pitch 
 
-### Mini Pitch :ghost:
-
-[DELETE ME - ADD YOUR PITCH HERE]
+A map that guides bystanders at the scene of an overdose to the nearest naloxone kit, and walks them through what to do.
 
 ### Problem Statment :mega:
 
-[DELETE ME - ADD YOUR PROBLEM STATMEMENT HERE]
+The city is not equiped to deal with the high number of overdoses that require emergency attention.
 
 ### User Stories :snowboarder:
 
-[DELETE ME - ADD YOUR USER STORIES HERE]
+As a user, I want an easy direct homepage with an emergency button for crisis situations that quickly walks you through what to do, so that I won’t waste time in a crisis situation and can act accordingly. 
 
-* EXAMPLE - I want my users to be able to see a default page on my website.
-* EXAMPLE - I want my users to be able to login to my website.
+As a user, I want an auto call option to emergency services, so I don’t have to leave the page and can simply follow the procedure on the page.  
 
-### Website Pages :speedboat:
+As an admin, I want the ability to add locations and approve users location imputs, so I can add and update locations on the map.
 
-[DELETE ME - ADD YOUR WEBSITE PAGES HERE]
+As a user, I want the page to automatically take my location, so I do not have to waste time manually imputing the address.
 
-* EXAMPLE - Landing Page -> `index.html`
-* EXAMPLE - Login / Register Page -> `login-register.html`
+As a user, I want to be directed to the nearest kit with a clear route and time, so that I can quickly get the kit without worrying about the route. 
 
-### Promo :grinning:
+As an admin, I want the ability to alter the statuses of kits after they’ve been used/replaced/moved, to keep the public informed with up-to date information. 
 
-[DELETE ME - ADD YOUR WEBSITE PROMO IMAGES HERE]
+As a user, I want a well designed interactive map, so I can see the details of my route and where I need to turn. 
 
-![Example: Promo 1]()
+As a user, I want a good FAQ section, to be informed and have a space to ask questions.  
+
+### Website Pages 
+
+* Landing Page:
+    * `index.html`
+* Emergency:
+    * `step1.html`
+    * `Step2.html`
+    * `map.html`
+    * `Step4.html`
+* Register:
+    * `registerlocation.html`
+* FAQ:
+    * `faq.html`
+* Settings:
+    * `settings.html`
+    * `login-for-settings.html`
+    * `location-settings.html`
+
+### Promo 
+
+![Promo 1](img/home-page.png)
+![Promo 2](img/step1-page.png)
+![Promo 3](img/step2-page.png)
+![Promo 4](img/map-page.png)
+![Promo 5](img/step4-page.png)
+![Promo 6](img/login-page.png)
+![Promo 7](img/register-page.png)
+![Promo 8](img/register-location-page.png)
+![Promo 9](img/faq-page.png)
+![Promo 10](img/settings-page.png)
 
 ## Getting Started :thinking:
 
