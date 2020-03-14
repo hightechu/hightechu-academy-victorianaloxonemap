@@ -19,7 +19,7 @@
     <title>Leaflet Routing Machine Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -39,23 +39,29 @@
   <!-- BODY -->
   <body>
     <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <!-- ADD CONTENT HERE -->
     <body onload="getLocation()"></body>
 
     <section>
       <div>
-        <a href = "/Step2.html" class="button"> Back to previous page</a>
+        <p>
+          This map shows you the route to the nearest naloxone kit. 
+          After getting the kit and returning with it to the person overdosing, skip to the next page.
+        </p>
+        <a href = "/Step2.html" class="button"> Previous page</a>
         <a href = "/" class="button"> Back to homepage</a>
 
         <button onClick = "getKits()" class="button"> Show kits</button>
         <button onClick = "getLocation()" class="button"> Reset</button>
-      
+
+        <a href = "/Step4.html" class="button"> Next Step</a>
       </div>
     </section>
 
     <div id="map" class="map"></div>
+    
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
@@ -120,31 +126,27 @@
         
         // Connect to the API
         connectAPI("kits", "GET", responseStatus);
-    }
+      }
 
-    function findDist(lat1,lon1,lat2,lon2) 
-    {
-      var R = 6371; // Radius of the earth in km
-      var dLat = deg2rad(lat2-lat1);  // deg2rad below
-      var dLon = deg2rad(lon2-lon1); 
-      var a = 
-      Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-      Math.sin(dLon/2) * Math.sin(dLon/2); 
-      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-      var d = R * c; // Distance in km
-      return d;
-    }
+      function findDist(lat1,lon1,lat2,lon2) 
+      {
+        var R = 6371; // Radius of the earth in km
+        var dLat = deg2rad(lat2-lat1);  // deg2rad below
+        var dLon = deg2rad(lon2-lon1); 
+        var a = 
+        Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+        Math.sin(dLon/2) * Math.sin(dLon/2); 
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+        var d = R * c; // Distance in km
+        return d;
+      }
 
-    function deg2rad(deg) 
-    {
-      return deg * (Math.PI/180)
-    }
-
-
-
-
-      </script>
+      function deg2rad(deg) 
+      {
+        return deg * (Math.PI/180)
+      }
+    </script>
     <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
     <script src="js/main.js"></script>
     <script src="js/getKits.js"></script>
