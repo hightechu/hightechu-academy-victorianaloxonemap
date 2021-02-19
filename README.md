@@ -44,26 +44,11 @@ As a user, I want a good FAQ section, to be informed and have a space to ask que
     * `map.html`
     * `Step4.html`
 * Register:
-    * `registerlocation.html`
+    * `add-kit.html`
 * FAQ:
     * `faq.html`
-* Settings:
-    * `settings.html`
-    * `login-for-settings.html`
-    * `location-settings.html`
 
 ### Promo 
-
-![Promo 1](img/home-page.png)
-![Promo 2](img/step1-page.png)
-![Promo 3](img/step2-page.png)
-![Promo 4](img/map-page.png)
-![Promo 5](img/step4-page.png)
-![Promo 6](img/login-page.png)
-![Promo 7](img/register-page.png)
-![Promo 8](img/register-location-page.png)
-![Promo 9](img/faq-page.png)
-![Promo 10](img/settings-page.png)
 
 ## Getting Started :thinking:
 
