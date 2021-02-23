@@ -1,40 +1,16 @@
-# Hightechu Academy Group Project :metal:
+# HighTechU Internship Project :metal:
 
-HighTechU Group Project
-
-## VICTORIA NALOXONE KIT MAP
+## NALOXONE MAP
 
 ### Website :star:
 
-[Live Demo](https://victoria-naloxone-map.herokuapp.com)
+[Live Demo](https://victoria-naloxone-map.herokuapp.com) of intial prototype we worked of off
 
-### Mini Pitch 
+### Purpose
 
 A map that guides bystanders at the scene of an overdose to the nearest naloxone kit, and walks them through what to do.
 
-### Problem Statment :mega:
-
-The city is not equiped to deal with the high number of overdoses that require emergency attention.
-
-### User Stories :snowboarder:
-
-As a user, I want an easy direct homepage with an emergency button for crisis situations that quickly walks you through what to do, so that I won’t waste time in a crisis situation and can act accordingly. 
-
-As a user, I want an auto call option to emergency services, so I don’t have to leave the page and can simply follow the procedure on the page.  
-
-As an admin, I want the ability to add locations and approve users location imputs, so I can add and update locations on the map.
-
-As a user, I want the page to automatically take my location, so I do not have to waste time manually imputing the address.
-
-As a user, I want to be directed to the nearest kit with a clear route and time, so that I can quickly get the kit without worrying about the route. 
-
-As an admin, I want the ability to alter the statuses of kits after they’ve been used/replaced/moved, to keep the public informed with up-to date information. 
-
-As a user, I want a well designed interactive map, so I can see the details of my route and where I need to turn. 
-
-As a user, I want a good FAQ section, to be informed and have a space to ask questions.  
-
-### Website Pages 
+### Website Layout
 
 * Landing Page:
     * `index.html`
@@ -43,7 +19,6 @@ As a user, I want a good FAQ section, to be informed and have a space to ask que
     * `Step2.html`
     * `map.html`
     * `Step4.html`
-* Register:
     * `add-kit.html`
 * FAQ:
     * `faq.html`

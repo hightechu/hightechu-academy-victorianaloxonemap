@@ -1,28 +1,83 @@
-a {
-  height:30px; 
-  width:120px; 
+/*
+name: homepage.css
+modified by: Becca & Trista
+purpose: to style the home menu
+*/
+
+body {
+  background-color: #E8CEBF !important;
+}
+
+a:hover {
+  color: #FFFFFF !important;
+}
+
+#emergencyButton {
+  font-family: 'Roboto Condensed' sans-serif;
+  padding-top: 4%;
+  height: 45vh !important;
+}
+
+#emergencyText:hover {
+  background-color:#c47a5c;
+}
+
+#emergencyText{
+  color: #FFFFFF;
+  background-color: #db8867;
+  padding: 5% 15% 5% 15%;
+  font-size: 8vh !important;
+  text-transform: uppercase;
+}
+
+#smbuttons{
+	padding-top: 7%;
+    width: 60vw;
+	margin: auto; 
+}
+
+#faq {
+  float: right;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#login {
+  float: left;
 }
 
 h1 {
+  padding-top: 1%;
   text-align: center;
-  font-size: 150%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20vh !important;
+  font-family: 'Imbue', serif !important;
 }
 
-div{
+h6 {
+  text-align: center;
+  font-size: 8vh !important;
+  font-family: 'Imbue', serif !important;
+  color:#3A3B3C !important;
+}
+
+div {
   text-align: center;
 }
 
 .button {
-  background-color: rgb(190, 190, 190);
-  border: 5px rgb(131, 130, 130) solid;
-  color: rgb(66, 62, 62);
-  padding: 15px 32px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #004949;
+  font-family: 'Roboto Condensed' sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 3vh !important;
+}
+
+.button:hover {
+  background-color:#003636;
+}
+
+#heart{
+	color:#920000;
 }

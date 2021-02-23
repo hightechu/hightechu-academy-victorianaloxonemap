@@ -1,125 +1,114 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* 
+	name: styles.css 
+	author: Modified by Becca & Trista
+	purpose: Styling for the FAQ page 
+*/
+	
 
-.center {
-  margin: auto;
-  text-align: center;
+/*BODY - STYLING FOR WHOLE PAGE*/
+body{
+	font-family: 'Roboto Condensed', sans-serif !important;/* !important overrides Bootstrap*/
+	background-color: #E8CEBF !important;
+	text-align: center !important; 
 }
 
+/*TITLE*/
 h1 {
-  font-size: 100px;
+	font-family:'Imbue', serif !important;
+	font-size: 15vh !important;
+	color:black;
+	padding:5%;
 }
 
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-p.groove {
-  border-style: groove;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
+/*COLLAPSIBLE*/
 .collapsible {
-  background-color: rgb(201, 198, 198);
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+	background-color: #004949;
+	color: white;
+	cursor: pointer;
+	padding: 3%;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: 4vh;
+	outline: none;
 }
 
 .active,
 .collapsible:hover {
-  background-color: #ccc;
-}
-
-.content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out
+	background-color: #003636;
 }
 
 .collapsible:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
+	content: '\02795';
+	/* Unicode character for "plus" sign (+) */
+	color: white;
+	float: right;
+	margin-left: 2%;
 }
 
 .active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+	content: "\2796";
+	/* Unicode character for "minus" sign (-) */
 }
 
-button {
-  font-size: 24px;
+.content {
+	max-height: 0;
+	overflow: hidden;
+    font-size: 3vh;
+	transition: max-height 0.2s ease-out;
+	margin-left:2%;
+	margin-right:2%;
 }
 
-#mapid { 
-  display: block; height: 90vh; width: 100%; 
+/*alternate collapsible colour*/
+.alt{
+    background-color: #69A297;
 }
 
-.outerdiv {
-  display: flex;
-  justify-content: center;
-  align-items: center
+p{
+	/*padding for the text in the collapsible*/
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-/* Change the width and height of the button here (This is the size used on the homepage) */
-a {
-  height:30px; 
-  width:120px; 
+p{
+	/*padding for the text in the collapsible*/
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-/* Centering of the button. */
-div {
-  text-align: center;
-}
 
-/* Button attributes (This is the attributes used on the homepage) */
+
+/*BUTTONS*/
 .button {
-  background-color: rgb(190, 190, 190);
-  border: 5px rgb(131, 130, 130) solid;
-  color: rgb(66, 62, 62);
-  padding: 15px 32px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif !important;
+	background-color: #004949;   
+	color: white;
+	padding: 0% 4% !important;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 4vh !important;
+    float: left;
+	margin-bottom: 2vw;
+
 }
 
-.leaflet-control {
-   background-color: gray;
-   opacity: 0.75;
- }
+.button:hover {
+	background-color:#003636;
+	color: white;
+}
 
-/*@media only screen and (max-width: 600px)
-{
-   .leaflet-control
-   {
-      width: 20vh;
-      height: 20vh;
-   }
-}*/
+.btndiv {
+	padding-top: 10%;
+	margin-left: 2vw;
+}
 
+.link {
+  color:  #004949 !important;
+}
 
-/*.leaflet-right {
-  width: 20vh;
-  height: 20vh;
-}*/
+.link:hover {
+  color:#003636 !important;
+}

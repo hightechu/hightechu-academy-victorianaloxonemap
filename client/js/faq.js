@@ -1,3 +1,4 @@
+// for collapsible answers on FAQ page
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

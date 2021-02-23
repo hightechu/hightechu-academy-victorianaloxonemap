@@ -1,153 +1,84 @@
-<!doctype html>
-<html lang="en">
-  <!-- HEAD -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ADD TITLE -->
-    <title></title>
-    <!-- ADD DESCRIPTION -->
-    <meta name="description" content="">
-    <!-- ADD AUTHOR -->
-    <meta name="author" content="">
-    <!-- ADD CSS FILES HERE -->
-    <link rel='icon' href='/img/favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="css/styles.css">
+<!DOCTYPE html>
+	<html lang="en">
+	
+	<!-- HEAD -->
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8" />
-    <title>Leaflet Routing Machine Example</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
+		<!-- TITLE -->
+		<title>Step 3</title>
+		
+		<!-- FAVICON -->
+		<link rel='icon' href='/img/favicon.ico' type='image/x-icon'>
+		
+		<!-- CSS AND STYLING LINKED -->
+		<link rel="stylesheet" href="css/steps.css">
+		<link href="https://fonts.googleapis.com/css2?family=Imbue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.1.3-dist/css/bootstrap.min.css"/>
+		
+		<!-- mapbox map and geocoding features -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+		 <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' /> 
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css"/>
+		
+        <!-- Geocoder plugin -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+		<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
+		<!-- Turf.js plugin (used for finding nearest point to user) -->
+		<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+		
+		<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
 
-    <style>
-      .map {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+		<!-- Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+		
+		 <!-- Bootstrap modal won't work without JQuery -->
+		 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		 <script src="bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+		 
+		<!-- Mapbox Directions -->
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css"/>
+	  </head>
+	  
+	<!-- BODY -->
+	  <body>
+	    <!-- PROGRESS BAR -->
+	    <div class="progress">
+		  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
 
-    <!-- ADD FAVICON -->
-    <!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
-  </head>
-  <!-- BODY -->
-  <body>
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-    <!-- ADD CONTENT HERE -->
-    <body onload="getLocation()"></body>
+		<!-- ADD CONTENT HERE -->
+		<h1 class="title">Step 3:</h1> 
+		
+		<section class="sep">
+			<p class="text">
+              This map shows you the route to the nearest naloxone kit. 
+              Drag points A and B to adjust your route. Once you have retrieved 
+              the kit and returned to the overdosing person, skip to the next step.
+            </p>
+		</section>
 
-    <section>
-      <div>
-        <p>
-          This map shows you the route to the nearest naloxone kit. 
-          After getting the kit and returning with it to the person overdosing, skip to the next page.
-        </p>
-        <a href = "/Step2.html" class="button"> Previous page</a>
-        <a href = "/" class="button"> Back to homepage</a>
-
-        <button onClick = "getLocation()" class="button"> Reset</button>
-
-        <a href = "/Step4.html" class="button"> Next Step</a>
-      </div>
-    </section>
-
-    <div id="map" class="map"></div>
-    
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin=""></script>
-    <script src="js/leaflet-routing-machine.js"></script>
-
-    <br>
-
-    <div class="outerdiv" width="100%">
-      <div class="innerdiv" id="mapid"></div>
-    </div> 
-
-    <!-- JAVASCRIPT SCRIPT -->
-    <!-- ADD JS FILES HERE -->
-    <script>
-      function getLocation() 
-      {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-          
-        } else {
-          //x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-      }
-      function showPosition(position) 
-      {
-        var lat = position.coords.latitude;
-        var lon = position.coords.longitude;
-
-        var closestLat;
-        var closestLon;
-
-        responseStatus = function (response, status) 
-        {
-          var currentBest = 100000000000000000000000;
-
-          if(response.length == 0) return;
-
-          for(var i = 0; i < response.length; i++)
-          {
-            var dist = findDist(response[i].latitude, response[i].longitude, lat, lon);
-            console.log(dist + " " + response[i].name);
-
-            var marker = L.marker([response[i].latitude, response[i].longitude]).addTo(mymap);
-            
-            if(dist < currentBest)
-            {
-              currentBest = dist;
-              closestLat = response[i].latitude;
-              closestLon = response[i].longitude;
-            }
-            
-          }
-          L.Routing.control({
-          waypoints: [
-          L.latLng(closestLat, closestLon),
-          L.latLng(lat, lon)
-          ],
-          routeWhileDragging: true,
-          draggableWaypoints: false
-          }).addTo(mymap);
-        }
-        
-        // Connect to the API
-        connectAPI("kits", "GET", responseStatus);
-      }
-
-      function findDist(lat1,lon1,lat2,lon2) 
-      {
-        var R = 6371; // Radius of the earth in km
-        var dLat = deg2rad(lat2-lat1);  // deg2rad below
-        var dLon = deg2rad(lon2-lon1); 
-        var a = 
-        Math.sin(dLat/2) * Math.sin(dLat/2) +
-        Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
-        Math.sin(dLon/2) * Math.sin(dLon/2); 
-        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-        var d = R * c; // Distance in km
-        return d;
-      }
-
-      function deg2rad(deg) 
-      {
-        return deg * (Math.PI/180)
-      }
-    </script>
-    <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
-    <script src="js/main.js"></script>
-    <script src="js/getKits.js"></script>
+		<!-- MAP -->
+		<div id="map">	
+		<!-- BUTTONS -->
+	     <section class="mapbtn">
+			<a href = "Step2.html" class="btn button" id="goBack"> Back<br><i class="fas fa-arrow-circle-left"></i></a>
+			<button id="fly" onclick="resetLocation()" class="btn button">Reset<br><i class="fas fa-street-view"></i></button>
+			<a href="Step4.html" class="btn button" id="goNext">Next<br><i class="fas fa-arrow-circle-right"></i></a>
+		</section>
+		</div> 
+       
+		<!-- JAVASCRIPT SCRIPT -->
+		<script src="js/register-login.js"></script>
+		<script src="js/find-kit.js"></script>
   </body>
 </html>

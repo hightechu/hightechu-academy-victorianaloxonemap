@@ -1,70 +1,81 @@
-<!-- This is a template file -->
-<!-- Use this template as a starter -->
-<!-- Copy and Paste this when creating a new HTML file -->
+<!--
+	name: faq.html
+	author: Modified by Becca & Trista
+	purpose: FAQ page 
+-->
 
-<!-- TELLS THE BROSWER -->
-<!doctype html>
-<!-- ENGLISH -->
-<html lang="en">
-<!-- HEAD -->
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+	<!-- ENGLISH -->
+	<html lang="en">
+	
+	<!-- HEAD -->
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ADD TITLE -->
-    <title>FAQ</title>
-    <!-- ADD DESCRIPTION -->
-    <meta name="description" content="">
-    <!-- ADD AUTHOR -->
-    <meta name="author" content="">
-    <!-- ADD CSS FILES HERE -->
-    <link rel='icon' href='/img/favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="css/styles.css">
+		<!-- TITLE -->
+		<title>Naloxone Map - FAQ</title>
+		
+		<!-- FAVICON -->
+		<link rel='icon' href='/img/favicon.ico' type='image/x-icon'>
+		
+		<!-- CSS AND STYLING LINKED -->
+		<link rel="stylesheet" href="css/styles.css">	
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.1.3-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Imbue&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	  </head>
+	  
+	  <!-- BODY -->
+	  <body>
+	  
+		<!-- COLLAPSIBLE -->
+		<section>
+		  <h1>
+			Frequently Asked Questions <i class="fas fa-info-circle"></i>
+		  </h1>
 
-    <!-- ADD FAVICON -->
-    <!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
-  </head>
-  <body>
-    <div class="center">
-      <h1>
-        <p class="groove">FAQ
-          <img src="data:image/png;base64,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"
-          style="width:80px;height:80px;">
-        </p>
-      </h1>
-      <h2>
+		  <button type="button" class="collapsible">How do I register my naloxone kit?</button>
+			<div class="content">
+				<p>Simply click the "login or register" button on the homepage. After signing in with a Google account, 
+                   click "add kit" where you can drag and drop a marker to the location of your choice. Click on 
+                   "name location" in the top-left corner and enter the location's name in the prompt. Finally, click 
+                   "save location" and a confirmation message should appear.</p>
+			</div>
 
-      <button type="button" class="collapsible">How do I register my naloxone kit?</button>
-      <div class="content">
-        <p>Simply click on the register location button located on the homepage and login or register. After that, you may enter your coordinates and a name or description of your location.</p>
-      </div>
+		  <button type="button" class="alt collapsible">What should I do if I want to unregister my naloxone kit or report a location missing a kit?</button>
+			<div class="content">
+				<p>Please send the coordinates to victorianaloxonemap@gmail.com to be reviewed by an admin. </p>
+			</div>
+		  
+		  <button type="button" class="collapsible">Where can I find more resources on overdose prevention? </button>
+			<div class="content">
+				<p>
+                  <a class="link" href="https://www2.gov.bc.ca/gov/content/overdose/what-you-need-to-know/signs-of-an-overdose">Overdose Prevention and Response in B.C.</a>
+                  <br>
+			      <a class="link" href="https://www.islandhealth.ca/learn-about-health/substance-use-addiction/overdoses">Island Health Overdose Prevention and Response</a>
+                  <br>
+				  <a class="link" href="https://www.islandhealth.ca/sites/default/files/covid-19/documents/covid-response-overdose.pdf">Island Health COVID-19 Overdose Response</a>
+				</p>
+			</div>
+		  
+		  <button type="button" class="alt collapsible">What happens with my information?</button>
+			<div class="content">
+				<p>Your location information is used to calculate the nearest distance to a naloxone kit, and is not saved anywhere else. 
+                   Your Google account information is only used to identify you as a logged in user, and your email is saved to our secure, Google-owned Firebase database. 
+                   Once in the database, your email can only be seen by the few project administrators and it is assigned a unique user ID to allow the site to remember you.</p>
+			</div>
+		  </section>
 
-      <button type="button" class="collapsible">What should I do if a naloxone registered location does not have a kit?</button>
-      <div class="content">
-        <p>Send the coordinates to victorianaloxonemap@gmail.com to be reviewed by an admin. </p>
-      </div>
+		  <!-- BACK BUTTON -->
+			<div class="btndiv">
+			  <a href = "index.html" class="btn button">Back<br><i class="fas fa-arrow-circle-left"></i></a>
+			</div> 
 
-      <button type="button" class="collapsible">How do I logout?</button>
-      <div class="content">
-        <p>On the homepage click on the logout button located at the bottom of the page to logout.</p>
-      </div>
-
-      <button type="button" class="collapsible">What Should I do if I want to unregister my naloxone kit?</button>
-      <div class="content">
-        <p>Click on the settings button located on the homepage and navigate to the kit locations setting button where you will be able to edit your location(s).</p>
-      </div>
-    </div>
-    <br>
-      <section>
-        <div>
-          <a href = "/" class="button"> Back to homepage</a>
-        </div> 
-      </section>
-
-    <!-- JAVASCRIPT SCRIPT -->
-    <!-- ADD JS FILES HERE -->
-    <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
-    <script src="js/main.js"></script>
-    <script src="js/faq.js"></script>
-  </body>
-</html>
+		<!-- JAVASCRIPT SCRIPT -->
+		<script src="js/faq.js"></script>
+	  </body>
+	  
+	</html>
