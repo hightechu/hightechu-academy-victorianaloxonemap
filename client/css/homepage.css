@@ -6,6 +6,7 @@ purpose: to style the home menu
 
 body {
   background-color: #E8CEBF !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 a:hover {
@@ -13,7 +14,6 @@ a:hover {
 }
 
 #emergencyButton {
-  font-family: 'Roboto Condensed' sans-serif;
   padding-top: 2%;
   width: 45vmax !important;
   margin:auto;
@@ -74,7 +74,6 @@ div {
 .button {
   color: #FFFFFF;
   background-color: #004949;
-  font-family: 'Roboto Condensed' sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;

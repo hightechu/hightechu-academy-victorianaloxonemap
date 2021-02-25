@@ -65,19 +65,19 @@ body {
 }
 
 #next {
-  padding: 0% 1.75% !important;
+  width: 10vmax !important;
   margin-right: 2vw;
   float: right;
 }
 
 #back {
-  padding: 0% 4% !important;
+  width: 10vmax !important;
   margin-left: 2vw;
   float:left;
 }
 
 #home {
-  padding: 0% 4% !important;
+  width: 10vmax !important;
   margin-right: 2vw;
   float: right;
 }
@@ -141,10 +141,12 @@ p {
 }
 
 #fly {
+	font-family: 'Roboto Condensed', sans-serif !important;
   position: absolute;
   top: 1vh;
   left: 1vw;
   z-index:1000;
+  width: 10vmax !important;
 }
 
 ul {
@@ -187,21 +189,21 @@ li {
 }
 
 #goBack {
+  font-family: 'Roboto Condensed', sans-serif !important;
   position: absolute;
   bottom: 1vh;
   left: 1vw;
   z-index:1000;
-  padding-left: 1.57%;
-  padding-right: 1.57%;
+  width: 10vmax !important;
 }
 
 #goNext {
+  font-family: 'Roboto Condensed', sans-serif !important;
   position: absolute;
   bottom: 1vh;
   right: 1vw;
   z-index:1000;
-  padding-left: 1.6%;
-  padding-right: 1.6%;
+  width: 10vmax !important;
 }
 
 .mapbox-directions-instructions {
