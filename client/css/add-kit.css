@@ -55,7 +55,7 @@ div {
 }
 
 #setLocation {
-  line-height: 1;
+  line-height: 1.0;
 }
 
 .mapboxgl-ctrl-geocoder {
