@@ -33,6 +33,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1vh;
  
 }
 
@@ -51,4 +52,12 @@ body {
 
 div {
     text-align: center;
-  }
+}
+
+#setLocation {
+  line-height: 1;
+}
+
+.mapboxgl-ctrl-geocoder {
+  max-width: 45vw !important;
+}
