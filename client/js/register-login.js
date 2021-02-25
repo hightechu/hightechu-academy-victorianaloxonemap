@@ -36,14 +36,14 @@ function signIn(){
 
 // goes to map where user can register kits
 function toMap(){
-    window.location="/add-kit.html";
+    window.location="add-kit.html";
 }
 
 // true if a user is signed-in, so ensures that anonymous user cannot get in
 function isUserSignedIn() {
     firebase.auth().onAuthStateChanged(function(user){
         if (!user) {
-            window.location="/index.html";
+            window.location="index.html";
         }
     });
 }//isUserSignedIn
@@ -52,7 +52,7 @@ function isUserSignedIn() {
 // Signs user out
 function signOut() {
     firebase.auth().signOut().then(() => {
-        window.location="/index.html";
+        window.location="index.html";
     }).catch((error) =>{
 
     });
@@ -88,9 +88,6 @@ function displayMarker(){
     });
 }
 
-
-
-
 // save the location and name of new marker to database
 function getLocation(lng, lat, input){
         
@@ -104,63 +101,3 @@ function getLocation(lng, lat, input){
         // create new child of "markers" on database with new location data
         firebase.database().ref("markers").push(data);
 }
-
-
-
-/*
-//For Admin
-(function() {
-	// For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
-	const firebaseConfig = {
-		apiKey: " AIzaSyD43410bqPCKXQoGbXRVTHcBM8AjkviSJU ",
-		authDomain: "victoria-naloxone-map.firebaseapp.com",
-		databaseURL: "https://victoria-naloxone-map.firebaseio.com",
-		projectId: "victoria-naloxone-map",
-		storageBucket: "victoria-naloxone-map.appspot.com",
-		messagingSenderId: "687916298506",
-		appId: "1:687916298506:web:48243d7d9731ca4ee68af3",
-	};
-
-	
-	firebase.initializeApp(firebaseConfig);
-	console.log( firebase );
-	var database = firebase.database();
-
-	// get elements
-	const email = document.getElementById("emailLogin");
-	const pass = document.getElementById("passwordLogin");
-	const loginBtn = document.getElementById("loginTag");
-	const registerBtn = document.getElementById("registerBtn");
-
-
-	// Add login event
-	loginBtn.addEventListener('click', e => {
-		console.log("Logged In");
-		// get email and password
-		const txtEmail = email.value;
-		const txtPass = pass.value;
-		//const auth = firebase.auth();
-
-		// sign in
-		const promise = auth.signInWithEmailAndPassword(txtEmail, txtPass);
-		 promise.catch(e => console.log(e.message));
-	});
-
-	// Add sign-up event
-	registerBtn.addEventListener('click', e => {
-		console.log("Registered");
-		// get email and password
-		const txtEmail = email.value;
-		const txtPass = pass.value;
-		const auth = firebase.auth();
-
-		// sign up
-		const promise = auth.createUserWithEmailAndPassword(txtEmail, txtPass);
-		promise.catch(e => console.log(e.message));
-
-	});
-
-
-
-
-}()); */

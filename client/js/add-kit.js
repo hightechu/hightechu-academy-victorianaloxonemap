@@ -69,7 +69,7 @@ function addLocation(){
     popup.getElement().style.zIndex = 1001;
 
     // change button to allow user to save named location
-    document.getElementById("setLocation").innerHTML = "Save Location";
+    document.getElementById("setLocation").innerHTML = "Save<br>Location";
     document.getElementById("setLocation").setAttribute("onclick","saveLocation()");
     document.getElementById("setLocation").style.backgroundColor = "red";
     document.getElementById("setLocation").setAttribute("onmouseout","this.style.backgroundColor = 'red'");
@@ -128,7 +128,7 @@ function exitLocation() {
     popup.remove();
     
     // change button back to "Name Location"
-    document.getElementById("setLocation").innerHTML = "Name Location";
+    document.getElementById("setLocation").innerHTML = "Name<br>Location";
     document.getElementById("setLocation").setAttribute("onclick","addLocation()");
     document.getElementById("setLocation").style.backgroundColor = "#004949";
     document.getElementById("setLocation").setAttribute("onmouseout","this.style.backgroundColor = '#004949'");
