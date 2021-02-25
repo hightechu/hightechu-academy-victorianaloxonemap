@@ -209,9 +209,7 @@ li {
 }
 
 .directions-control.directions-control-directions {
-    max-width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
+ width: 100%;
 }
 
 .directions-control-inputs {
@@ -219,7 +217,12 @@ li {
 }
 
 .mapboxgl-ctrl-directions { 
-  min-width: 53.5vw !important;
   background-color: rgba(0,0,0,0.6);
   padding: 2% 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mapboxgl-ctrl-directions { 
+      min-width: 58vw !important;
+    }
 }
