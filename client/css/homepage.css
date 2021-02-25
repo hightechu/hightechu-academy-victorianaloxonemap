@@ -27,17 +27,17 @@ a:hover {
 #emergencyText{
   color: #FFFFFF;
   background-color: #db8867;
-  padding-top: 10%;
-  padding-bottom:10%;
-  font-size: 5vh !important;
+  padding-top: 5%;
+  padding-bottom:5%;
+  font-size: 4vw !important;
   text-transform: uppercase;
   display: block;
-    text-align:center;
+  text-align:center;
 }
 
 #smbuttons{
+	padding-top:7%;
     width: 50vw !important;
-	padding-top: 7%;
 }
 
 #faq {
