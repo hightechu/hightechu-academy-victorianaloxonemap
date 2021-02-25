@@ -15,7 +15,9 @@ a:hover {
 #emergencyButton {
   font-family: 'Roboto Condensed' sans-serif;
   padding-top: 4%;
-  height: 30vh !important;
+  height: 45vh !important;
+  width: 75vw !important;
+  margin: auto;
 }
 
 #emergencyText:hover {
@@ -32,8 +34,7 @@ a:hover {
 
 #smbuttons{
 	padding-top: 7%;
-    width: 60vw;
-	margin: auto; 
+    width: 50vw !important;
 }
 
 #faq {
@@ -49,13 +50,13 @@ a:hover {
 h1 {
   padding-top: 1%;
   text-align: center;
-  font-size: 15vh !important;
+  font-size: 10vw !important;
   font-family: 'Imbue', serif !important;
 }
 
 h6 {
   text-align: center;
-  font-size: 8vh !important;
+  font-size: 4vw !important;
   font-family: 'Imbue', serif !important;
   color:#3A3B3C !important;
 }
