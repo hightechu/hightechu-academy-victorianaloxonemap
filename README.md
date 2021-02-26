@@ -1,14 +1,17 @@
-# HighTechU Internship Project :metal:
-
 ## NALOXONE MAP
+#### Find a kit. Save a life.
 
 ### Website :star:
 
 [Live Demo](https://victoria-naloxone-map.herokuapp.com) of intial prototype we worked of off
 
+[Live Demo](https://victoria-naloxone-map.web.app/index.html) of the current working version
+
+
 ### Purpose
 
 A map that guides bystanders at the scene of an overdose to the nearest naloxone kit, and walks them through what to do.
+
 
 ### Website Layout
 
@@ -23,18 +26,11 @@ A map that guides bystanders at the scene of an overdose to the nearest naloxone
 * FAQ:
     * `faq.html`
 
-### Promo 
 
 ## Getting Started :thinking:
 
-### Requirements :dog:
 
-* [git](https://git-scm.com)
-* [Node.js](https://nodejs.org/en/)
-* [npm](https://www.npmjs.com) (**Installed with Node.js**)
-* [LoopBack CLI Tool](https://loopback.io/lb3/getting-started)
-
-### Obtaining the Project :cat:
+## How to Run Locally
 
 1. Open the terminal
 
@@ -57,6 +53,7 @@ cd REPO_NAME
 ```
 
 ### Running the Application :deer:
+###### To see the version hosted on Firebase visit the hosting branch
 
 1. Install the node_modules
 
@@ -70,46 +67,27 @@ npm install
 node .
 ```
 
-3. Head over to [http://0.0.0.0:3000](http://0.0.0.0:3000) and [http://0.0.0.0:3000/explorer](http://0.0.0.0:3000/explorer) in the browser of your choice.
+3. Head over to [http://localhost:3000/](http://localhost:3000/) in the browser of your choice.
 
-### Adding Custom Models :ocean:
 
-1. Add Custom Models
+### Requirements :dog:
 
-```
-lb model
-```
+* [git](https://git-scm.com)
+* [Node.js](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com) (**Installed with Node.js**)
 
-2. Follow command prompts
+📤 Contributing
+There are two main ways in which you can participate in the project:
 
-## Deploying :bear:
+* [Submit bugs and feature requests](https://github.com/hightechu/hightechu-academy-victorianaloxonemap/issues)
+* Contribute to the code base through [source code changes](https://github.com/hightechu/hightechu-academy-victorianaloxonemap/pulls)
+* Learn more in our Contributing Document
 
-We are using Heroku to host our application. The following steps should only be done once. After setting up the application to deploy with GitHub, everytime you push to the master branch you will re-deploy your application.
 
-1. Log into [Heroku](https://id.heroku.com/login)
+📜 Code of Conduct
+Naloxone Map abides by the [CNCF code of conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). Here is an excerpt:
 
-1. Create a new app
-
-1. Setup `Deploy with GitHub` (Deploy -> GitHub -> Select Repository)
-
-1. Setup a `mongodb datasource for loopback` using [mLab MongoDB addon](https://elements.heroku.com/addons/mongolab)
-
-1. Replace the `server/datasources.json` with the following:
-
-```json
-{
-  "db": {
-    "db": {
-      "url": "mongodb://URL",
-      "name": "mongoDS",
-      "useNewUrlParser": true,
-      "connector": "mongodb"
-    }
-  }
-}
-```
-
-**Make sure to replace `URL` with the URL the Heroku mLab MongoDB addon provides.**
+As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
 
 ## Resources :blue_book:
 
@@ -117,11 +95,9 @@ We are using Heroku to host our application. The following steps should only be 
 * [GitHub Help](https://help.github.com/)
 * [GitHub Markdown Help](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
 * [GIT Command Line Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-* [Heroku](https://www.heroku.com)
-* [Heroku Documentation](https://devcenter.heroku.com/categories/reference)
-* [Loopback](http://loopback.io)
-* [Loopback Documentation](https://loopback.io/lb3/getting-started)
+* [Mapbox Documentation](https://docs.mapbox.com/)
+* [Firebase Documentation](https://firebase.google.com/docs)
 
-## Support :grey_question:
+⚖️ Licence
+This project uses the [MIT](https://github.com/hightechu/hightechu-academy-victorianaloxonemap/blob/main/LICENSE) Licence
 
-For support, visit the [HighTechU Academy Slack]().
