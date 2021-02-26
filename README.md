@@ -30,7 +30,7 @@ A map that guides bystanders at the scene of an overdose to the nearest naloxone
 
 This is the hosted version of the site. Head over to the main branch to run your own copy locally.
 
-### Requirements :dog:
+#### Requirements :dog:
 
 * [git](https://git-scm.com)
 * [Node.js](https://nodejs.org/en/)
@@ -43,8 +43,7 @@ There are two main ways in which you can participate in the project:
 * Contribute to the code base through [source code changes](https://github.com/hightechu/hightechu-academy-victorianaloxonemap/pulls)
 * Learn more in our Contributing Document
 
-
-📜 Code of Conduct
+### Code of Conduct 📜
 Naloxone Map abides by the [CNCF code of conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). Here is an excerpt:
 
 As contributors and maintainers of this project, and in the interest of fostering an open and welcoming community, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
@@ -58,5 +57,5 @@ As contributors and maintainers of this project, and in the interest of fosterin
 * [Mapbox Documentation](https://docs.mapbox.com/)
 * [Firebase Documentation](https://firebase.google.com/docs)
 
-⚖️ Licence
+### Licence ⚖️
 This project uses the [MIT](https://github.com/hightechu/hightechu-academy-victorianaloxonemap/blob/main/LICENSE) Licence
